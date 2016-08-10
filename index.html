@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Order</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+</head>
+<body>
+<table id="sortable">
+    <tbody>
+    <tr class="nosort">
+        <th>Description</th>
+        <th>Price</th>
+        <th>Action</th>
+    </tr>
+    <tr class="nosort last">
+        <td></td><td class="summary"></td><td></td>
+    </tr>
+    </tbody>
+</table>
+<button id="add">Add Item</button>
+<button id="send">Send</button>
+<form>
+<div>
+    <div>
+    <label>Row type</label>
+    <select id="linetype">
+        <option value="gadget">Gadget</option>
+        <option value="fee">Fee</option>
+        <option value="fxd">Fixed Discount</option>
+        <option value="per">Percent Discount</option>
+    </select>
+</div>
+    <div>
+        <label>Description</label>
+        <textarea id="descr"></textarea>
+    </div>
+    <div>
+        <label>Value</label>
+        <input id="linevalue" type="number">
+    </div>
+</div>
+</form>
+<script src="assets/js/index.js"></script>
+</body>
+</html>
